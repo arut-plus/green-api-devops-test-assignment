@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>GREEN-API DevOps Test Assignment</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="assets/favicon.svg">
+</head>
+<body>
+  <div class="page">
+    <div class="app">
+      <div class="column">
+        <!-- NOTE: to avoid hardcore -->
+        <input id="apiBaseUrl" type="text"
+               placeholder="https://api.green-api.com"
+               value="https://api.green-api.com" />
+
+        <input id="idInstance" type="text" placeholder="idInstance" />
+        <input id="apiTokenInstance" type="text"
+               placeholder="ApiTokenInstance" />
+        <button id="getSettingsBtn">getSettings</button>
+        <button id="getStateInstanceBtn">getStateInstance</button>
+
+        <input id="chatIdMessage" class="sectionStart" type="text"
+               placeholder="77771234567@c.us"
+               title="For acceptable formats, see https://green-api.com/docs/api/chat-id" />
+        <textarea id="message" placeholder="Hello World!"></textarea>
+        <button id="sendMessageBtn">sendMessage</button>
+
+        <input id="chatIdFile" class="sectionStart" type="text"
+               placeholder="77771234567@c.us"
+              title="For acceptable formats, see https://green-api.com/docs/api/chat-id" />
+        <input id="fileUrl" type="text"
+               placeholder="https://my.site.com/img/horse.png" />
+        <button id="sendFileByUrlBtn">sendFileByUrl</button>
+      </div>
+
+      <div class="column">
+        <label for="response" class="response-label">Ответ:</label>
+        <textarea id="response" class="response" readonly></textarea>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

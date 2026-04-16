@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+button {
+  cursor: pointer;
+  background: #f7f7f7;
+}
+
+button:hover {background: #ececec;}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.3;
+}
+
+input,
+textarea,
+button {
+  border: 1px solid #cfcfcf;
+  border-radius: 2px;
+  padding: 10px;
+}
+
+.page {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.app {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 20px;
+  align-items: start;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.response {
+  resize: none;
+  min-height: 500px;
+}
+
+.response-label {font-size: 16px;}
+
+.sectionStart {margin-top: 20px;}
